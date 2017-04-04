@@ -149,13 +149,28 @@ p{
 
   // main page
   .main-image{
-    @include background-image('https://placeimg.com/640/480/nature/grayscale');
+    @include background-image('../images/homepage.jpeg');
+    &.our-services{
+      @include background-image('../images/pexels-photo-167216.jpeg');
+    }
+    &.health-and-safety{
+      @include background-image('../images/pexels-photo-116022.jpeg');
+    }
+    &.about{
+      @include background-image('../images/pexels-photo-1.jpg');
+      height: 400px;
+    }
+    &.the-team{
+      @include background-image('../images/pexels-photo.jpg');
+      height: 400px;
+    }
+    &.contact-us{
+      @include background-image('../images/street-building-construction-industry.jpg');
+      height: 400px;
+    }
     height: 450px;
     width: 100%;
     position: relative;
-    &.about{
-      height: 400px;
-    }
     &.health-and-safety{
       h3{
         width: 100%;
@@ -186,6 +201,11 @@ p{
   }
 }
 
+.cover{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
 // footer
 
 .footer {

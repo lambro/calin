@@ -2,5 +2,24 @@
 .contact-us h2 {
   margin-top: 0;
 }
+/* line 5, ../../app/styles/contact_us.scss */
+.contact-us p.help-block {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  color: #a94442;
+}
+
+/* line 12, ../../app/styles/contact_us.scss */
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border: solid 1px #eee;
+}
+
+/* line 18, ../../app/styles/contact_us.scss */
+label {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15px;
+}
 
 /*# sourceMappingURL=contact_us.css.map */

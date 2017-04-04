@@ -8775,6 +8775,25 @@ button.close {
 .contact-us h2 {
   margin-top: 0;
 }
+/* line 5, ../../app/styles/contact_us.scss */
+.contact-us p.help-block {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  color: #a94442;
+}
+
+/* line 12, ../../app/styles/contact_us.scss */
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border: solid 1px #eee;
+}
+
+/* line 18, ../../app/styles/contact_us.scss */
+label {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15px;
+}
 
 /* line 14, ../../app/styles/main.scss */
 .browsehappy {
@@ -8945,7 +8964,7 @@ p {
 
   /* line 151, ../../app/styles/main.scss */
   .main-image {
-    background-image: url("https://placeimg.com/640/480/nature/grayscale");
+    background-image: url("../images/homepage.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8953,15 +8972,49 @@ p {
     width: 100%;
     position: relative;
   }
+  /* line 153, ../../app/styles/main.scss */
+  .main-image.our-services {
+    background-image: url("../images/pexels-photo-167216.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   /* line 156, ../../app/styles/main.scss */
+  .main-image.health-and-safety {
+    background-image: url("../images/pexels-photo-116022.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* line 159, ../../app/styles/main.scss */
   .main-image.about {
+    background-image: url("../images/pexels-photo-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 400px;
   }
-  /* line 160, ../../app/styles/main.scss */
+  /* line 163, ../../app/styles/main.scss */
+  .main-image.the-team {
+    background-image: url("../images/pexels-photo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  /* line 167, ../../app/styles/main.scss */
+  .main-image.contact-us {
+    background-image: url("../images/street-building-construction-industry.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+  }
+  /* line 175, ../../app/styles/main.scss */
   .main-image.health-and-safety h3 {
     width: 100%;
   }
-  /* line 164, ../../app/styles/main.scss */
+  /* line 179, ../../app/styles/main.scss */
   .main-image h3 {
     text-align: center;
     font-weight: 200;
@@ -8974,7 +9027,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  /* line 175, ../../app/styles/main.scss */
+  /* line 190, ../../app/styles/main.scss */
   .main-image h3:after {
     content: '';
     position: absolute;
@@ -8986,7 +9039,14 @@ p {
     margin-top: 20px;
   }
 }
-/* line 195, ../../app/styles/main.scss */
+/* line 204, ../../app/styles/main.scss */
+.cover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 215, ../../app/styles/main.scss */
 .footer .line {
   margin-bottom: 50px;
 }
