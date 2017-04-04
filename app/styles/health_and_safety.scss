@@ -1,0 +1,16 @@
+.health-and-safety{
+  h2{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+  }
+  .number{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 10px;
+    &:after{
+      content: ' ';
+      border-right: 2px solid rgba(#000000, 0.3);
+      margin-left: 8px;
+    }
+  }
+}

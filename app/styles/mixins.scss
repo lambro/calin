@@ -1,0 +1,10 @@
+@mixin background-image($url){
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.margin-top{
+  margin-top: 50px
+}

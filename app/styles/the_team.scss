@@ -1,0 +1,33 @@
+.team-member{
+  position: relative;
+  margin-bottom: 100px;
+  min-height: 200px;
+  &:hover{
+    .image{
+      filter: grayscale(0%);
+      transition: all 0.2s linear;
+    }
+  }
+  .name{
+    color: #000000;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    bottom: 0;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 13px;
+  }
+  .image{
+    width: 274px;
+    height: 219px;
+    margin: 0 auto;
+    filter: grayscale(100%);
+    transition: all 0.2s linear;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
