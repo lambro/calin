@@ -36,8 +36,9 @@
 ehthumbs.db
 Thumbs.db
 
-# npm and bower #
+# npm, dist and bower #
 ######################
 
 /bower_components/
 /node_modules/
+/dist/

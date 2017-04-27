@@ -15,7 +15,7 @@
           <label for="customerName">Name</label>
           <input type="text" class="form-control" ng-minlength="3" ng-class="{ 'form-control-success' : userForm.name.$valid && !userForm.name.$pristine, 'form-control-error' : !userForm.name.$valid && !userForm.name.$pristine }" name="name" ng-model="user.name" id="customerName" placeholder="Name" required>
           <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Your name is required.</p>
-          <p ng-show="userForm.name.$error.minlength" class="help-block" ">A name with over 3 characters is required.</p>
+          <p ng-show="userForm.name.$error.minlength" class="help-block">A name with over 3 characters is required.</p>
         </div>  
 
         <div class="form-group" ng-class="{ 'has-success' : userForm.name.$valid && !userForm.name.$pristine, 'has-error' : !userForm.name.$valid && !userForm.name.$pristine }" >

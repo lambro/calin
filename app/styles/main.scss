@@ -26,7 +26,7 @@ h2{
   text-align: center;
   color: rgba(#000000, 0.5)
 }
-p{
+p, li p{
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -149,16 +149,22 @@ p{
 
   // main page
   .main-image{
-    @include background-image('../images/homepage.jpeg');
+    width: 100%;
+    position: relative;
+    &.home{
+      height:450px;
+      @include background-image('../images/homepage.jpeg');
+    }
     &.our-services{
+      height:450px;
       @include background-image('../images/pexels-photo-167216.jpeg');
     }
     &.health-and-safety{
       @include background-image('../images/pexels-photo-116022.jpeg');
+      height:450px;
     }
     &.about{
       @include background-image('../images/pexels-photo-1.jpg');
-      height: 400px;
     }
     &.the-team{
       @include background-image('../images/pexels-photo.jpg');
@@ -168,9 +174,6 @@ p{
       @include background-image('../images/street-building-construction-industry.jpg');
       height: 400px;
     }
-    height: 450px;
-    width: 100%;
-    position: relative;
     &.health-and-safety{
       h3{
         width: 100%;

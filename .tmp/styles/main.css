@@ -8771,6 +8771,20 @@ button.close {
   background-repeat: no-repeat;
 }
 
+/* line 35, ../../app/styles/the_team.scss */
+.number {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+/* line 40, ../../app/styles/the_team.scss */
+.number:after {
+  content: ' ';
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  margin-left: 8px;
+}
+
 /* line 2, ../../app/styles/contact_us.scss */
 .contact-us h2 {
   margin-top: 0;
@@ -8816,7 +8830,7 @@ h2 {
 }
 
 /* line 29, ../../app/styles/main.scss */
-p {
+p, li p {
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -8964,37 +8978,41 @@ p {
 
   /* line 151, ../../app/styles/main.scss */
   .main-image {
+    width: 100%;
+    position: relative;
+  }
+  /* line 154, ../../app/styles/main.scss */
+  .main-image.home {
+    height: 450px;
     background-image: url("../images/homepage.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
-    width: 100%;
-    position: relative;
   }
-  /* line 153, ../../app/styles/main.scss */
+  /* line 158, ../../app/styles/main.scss */
   .main-image.our-services {
+    height: 450px;
     background-image: url("../images/pexels-photo-167216.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  /* line 156, ../../app/styles/main.scss */
+  /* line 162, ../../app/styles/main.scss */
   .main-image.health-and-safety {
     background-image: url("../images/pexels-photo-116022.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 450px;
   }
-  /* line 159, ../../app/styles/main.scss */
+  /* line 166, ../../app/styles/main.scss */
   .main-image.about {
     background-image: url("../images/pexels-photo-1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
   }
-  /* line 163, ../../app/styles/main.scss */
+  /* line 169, ../../app/styles/main.scss */
   .main-image.the-team {
     background-image: url("../images/pexels-photo.jpg");
     background-position: center;
@@ -9002,7 +9020,7 @@ p {
     background-repeat: no-repeat;
     height: 400px;
   }
-  /* line 167, ../../app/styles/main.scss */
+  /* line 173, ../../app/styles/main.scss */
   .main-image.contact-us {
     background-image: url("../images/street-building-construction-industry.jpg");
     background-position: center;
@@ -9010,11 +9028,11 @@ p {
     background-repeat: no-repeat;
     height: 400px;
   }
-  /* line 175, ../../app/styles/main.scss */
+  /* line 178, ../../app/styles/main.scss */
   .main-image.health-and-safety h3 {
     width: 100%;
   }
-  /* line 179, ../../app/styles/main.scss */
+  /* line 182, ../../app/styles/main.scss */
   .main-image h3 {
     text-align: center;
     font-weight: 200;
@@ -9027,7 +9045,7 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  /* line 190, ../../app/styles/main.scss */
+  /* line 193, ../../app/styles/main.scss */
   .main-image h3:after {
     content: '';
     position: absolute;
@@ -9039,16 +9057,14 @@ p {
     margin-top: 20px;
   }
 }
-/* line 204, ../../app/styles/main.scss */
+/* line 207, ../../app/styles/main.scss */
 .cover {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 215, ../../app/styles/main.scss */
+/* line 218, ../../app/styles/main.scss */
 .footer .line {
   margin-bottom: 50px;
 }
-
-/*# sourceMappingURL=main.css.map */

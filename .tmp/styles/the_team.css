@@ -33,4 +33,17 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-/*# sourceMappingURL=the_team.css.map */
+
+/* line 35, ../../app/styles/the_team.scss */
+.number {
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+/* line 40, ../../app/styles/the_team.scss */
+.number:after {
+  content: ' ';
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  margin-left: 8px;
+}
