@@ -1,4 +1,15 @@
 /* line 2, ../../app/styles/our_services.scss */
 .our-services h2 {
   margin-top: 0;
+  text-transform: uppercase;
+}
+/* line 7, ../../app/styles/our_services.scss */
+.our-services p {
+  text-align: justify;
+}
+
+/* line 12, ../../app/styles/our_services.scss */
+.main-service-heading {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
 }

@@ -8,9 +8,9 @@
 </div>
 
 <div class="row contact-us margin-top" ng-controller="ContactUsCtrl">
-    <div class="col">
-      <h2>Contact Us</h2>
-      <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+    <div class="col-xs-12 col-md-6">
+      <h2 class="hidden-xs">Contact Us</h2>
+      <form name="userForm" ng-submit="submitForm(userForm)" novalidate>
         <div class="form-group"  ng-class="{ 'has-success' : userForm.name.$valid && !userForm.name.$pristine, 'has-error' : !userForm.name.$valid && !userForm.name.$pristine }">
           <label for="customerName">Name</label>
           <input type="text" class="form-control" ng-minlength="3" ng-class="{ 'form-control-success' : userForm.name.$valid && !userForm.name.$pristine, 'form-control-error' : !userForm.name.$valid && !userForm.name.$pristine }" name="name" ng-model="user.name" id="customerName" placeholder="Name" required>
@@ -18,44 +18,50 @@
           <p ng-show="userForm.name.$error.minlength" class="help-block">A name with over 3 characters is required.</p>
         </div>  
 
-        <div class="form-group" ng-class="{ 'has-success' : userForm.name.$valid && !userForm.name.$pristine, 'has-error' : !userForm.name.$valid && !userForm.name.$pristine }" >
+        <div class="form-group" ng-class="{ 'has-success' : userForm.companyName.$valid && !userForm.companyName.$pristine, 'has-error' : !userForm.companyName.$valid && !userForm.companyName.$pristine }" >
           <label for="companyName">Company Name</label>
           <input type="text" class="form-control" ng-minlength="3" ng-class="{ 'form-control-success' : userForm.companyName.$valid && !userForm.companyName.$pristine }" name="companyName" id="companyName" ng-model="user.companyName" placeholder="Company Name" required>
           <p ng-show="userForm.companyName.$invalid && !userForm.companyName.$pristine" class="help-block">Company name is required.</p>
+          <p ng-show="userForm.companyName.$error.minlength" class="help-block">A name with over 3 characters is required.</p>
         </div>
 
-        <div class="form-group"  ng-class="{ 'has-success' : userForm.name.$valid && !userForm.name.$pristine, 'has-error' : !userForm.name.$valid && !userForm.name.$pristine }" >
+        <div class="form-group"  ng-class="{ 'has-success' : userForm.emailAddress.$valid && !userForm.emailAddress.$pristine, 'has-error' : !userForm.emailAddress.$valid && !userForm.emailAddress.$pristine }" >
           <label for="emailAddress">Contact Email Address</label>
-          <input type="email" pattern="^\S+@\S+\.\S+$" ng-class="{ 'form-control-success' : userForm.companyName.$valid && !userForm.companyName.$pristine }" class="form-control" name="emailAddress" ng-model="user.emailAddress" id="emailAddress" placeholder="Email Address" required>
+          <input type="email" pattern="^\S+@\S+\.\S+$" ng-class="{ 'form-control-success' : userForm.emailAddress.$valid && !userForm.emailAddress.$pristine }" class="form-control" name="emailAddress" ng-model="user.emailAddress" id="emailAddress" placeholder="Email Address" required>
           <p ng-show="userForm.emailAddress.$invalid && !userForm.emailAddress.$pristine" class="help-block">Your email address is required.</p>
           <p ng-show="userForm.emailAddress.$error.pattern" class="help-block">Please enter a valid email address.</p>
         </div>
 
-        <div class="form-group"  ng-class="{ 'has-success' : userForm.name.$valid && !userForm.name.$pristine, 'has-error' : !userForm.name.$valid && !userForm.name.$pristine }" >
+        <div class="form-group"  ng-class="{ 'has-success' : userForm.customerPhoneNumber.$valid && !userForm.customerPhoneNumber.$pristine, 'has-error' : !userForm.customerPhoneNumber.$valid && !userForm.customerPhoneNumber.$pristine }" >
           <label for="customerPhoneNumber">Contact Number</label>
-          <input type="tel" class="form-control" ng-class="{ 'form-control-success' : userForm.companyName.$valid && !userForm.companyName.$pristine }" ng-minlength="7" name="customerPhoneNumber" ng-model="user.customerPhoneNumber" id="customerPhoneNumber" placeholder="Number" required>
+          <input type="tel" class="form-control" ng-class="{ 'form-control-success' : userForm.customerPhoneNumber.$valid && !userForm.customerPhoneNumber.$pristine }" ng-minlength="7" name="customerPhoneNumber" ng-model="user.customerPhoneNumber" id="customerPhoneNumber" placeholder="Number" required>
           <p ng-show="userForm.customerPhoneNumber.$invalid && !userForm.customerPhoneNumber.$pristine" class="help-block">Your phone number is is required.</p>
           <p ng-show="userForm.customerPhoneNumber.$error.minlength" class="help-block">Please enter at least 7 digits.</p>
         </div>
 
-        <div class="form-group"  ng-class="{ 'has-success' : userForm.name.$valid && !userForm.name.$pristine, 'has-error' : !userForm.name.$valid && !userForm.name.$pristine }" >
+        <div class="form-group"  ng-class="{ 'has-success' : userForm.enquiryText.$valid && !userForm.enquiryText.$pristine, 'has-error' : !userForm.enquiryText.$valid && !userForm.enquiryText.$pristine }" >
           <label for="enquiryText">Message</label>
-          <textarea type="text" class="form-control" ng-class="{ 'form-control-success' : userForm.companyName.$valid && !userForm.companyName.$pristine }" ng-model="user.enquiryText" ng-minlength="30" name="enquiryText" id="enquiryText" placeholder="Enter your enquiry here..." required></textarea>
+          <textarea type="text" class="form-control" ng-class="{ 'form-control-success' : userForm.enquiryText.$valid && !userForm.enquiryText.$pristine }" ng-model="user.enquiryText" ng-minlength="30" name="enquiryText" id="enquiryText" placeholder="Enter your enquiry here..." required></textarea>
             <p ng-show="userForm.enquiryText.$error.minlength" data-ng-click="submit(userForm)" class="help-block">A message with over 30 characters is required.</p>
-            <!-- continue with validation for the form
-            get information for the Google maps api implementation -->
         </div> 
 
         <small class="form-text text-muted">*All fields are required.</small>
  
-        <button type="submit" class="btn btn-primary margin-top" ng-disabled="userForm.$invalid">Submit</button> 
+        <button type="submit" class="btn btn-primary submit-button margin-top" ng-disabled="userForm.$invalid">Submit</button> 
         <div ng-show="success">
           Thank you for submitting your enquiry
         </div>
       </form>
     </div>
-    <div class="col">
-      <h2>Find Us</h2>
+    <div class="col-xs-12 visible-xs margin-top mobile">
+      <div class="main-image contact-us img-responsive">
+        <div class="cover"></div>
+        <h3>Find Us</h3>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h2 class="hidden-xs">Find Us</h2>
+      <iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ09DfkGQABDQRqMgvgYxGkbM&key=AIzaSyC83qGXcYW3c3YUW6ptvb6FQqAARroOKQ0" allowfullscreen></iframe>
     </div>
   </div>
 </div>

@@ -9,9 +9,3 @@
   font-family: 'Raleway', sans-serif;
   margin-right: 10px;
 }
-/* line 10, ../../app/styles/health_and_safety.scss */
-.health-and-safety .number:after {
-  content: ' ';
-  border-right: 2px solid rgba(0, 0, 0, 0.3);
-  margin-left: 8px;
-}

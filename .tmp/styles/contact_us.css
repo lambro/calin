@@ -17,7 +17,20 @@
 }
 
 /* line 18, ../../app/styles/contact_us.scss */
+.btn.submit-button {
+  margin-top: 20px;
+  background-color: #052f57;
+  border: solid 1px #052f57;
+}
+
+/* line 24, ../../app/styles/contact_us.scss */
 label {
   font-family: 'Raleway', sans-serif;
   margin-top: 15px;
+}
+
+/* line 29, ../../app/styles/contact_us.scss */
+#map {
+  height: 100%;
+  background-color: lightgrey;
 }

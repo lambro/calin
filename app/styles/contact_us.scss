@@ -15,7 +15,18 @@
   border: solid 1px #eee;
 }
 
+.btn.submit-button{
+  margin-top: 20px;
+  background-color: rgba(5, 47, 87, 1.0);
+  border: solid 1px rgba(5, 47, 87, 1.0);
+}
+
 label{
   font-family: 'Raleway', sans-serif;
   margin-top: 15px;
+}
+
+#map{
+  height: 100%;
+  background-color: lightgrey;
 }
