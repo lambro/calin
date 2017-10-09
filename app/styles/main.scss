@@ -24,6 +24,10 @@ h1{
 h2{
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
+  &.no-caps{
+    text-transform: none;
+    margin-bottom: 20px;
+  }
   text-align: center;
   color: rgba(5, 47, 87, 0.5);
   font-size: 16px;

@@ -9,6 +9,4 @@
  */
 angular.module('calinApp')
   .controller('AboutCtrl', ['$scope', '$moment', '$timeout', function ($scope, $moment, $timeout) {
-
-
   }]);
