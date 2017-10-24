@@ -188,11 +188,14 @@ p, li p{
     font-size: 1.5rem;
   }
 
-  p.introduction{
-    max-width: 550px;
-    margin: 50px auto;
+  .introduction p{
+    margin: 10px auto;
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.6);
+    &.title {
+      max-width: 550px;
+      margin-bottom: 50px;
+    }
     a{
       color: rgba(0, 0, 0, 0.7);
     }
@@ -288,6 +291,20 @@ p, li p{
   }
   .line{
     margin-bottom: 50px; 
+  }
+  .contact {
+    a {
+      color: rgba(#000000, 0.8);
+    }
+    .left {
+      text-align: left;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
   }
 }
 
