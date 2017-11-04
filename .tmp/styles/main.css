@@ -9188,17 +9188,20 @@ h3.next-page:hover, h3 a.next-page:hover {
 }
 /* line 296, ../../app/styles/main.scss */
 .footer .contact a {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.3);
 }
 /* line 299, ../../app/styles/main.scss */
 .footer .contact .left {
   text-align: left;
+  color: rgba(0, 0, 0, 0.3);
 }
-/* line 302, ../../app/styles/main.scss */
+/* line 303, ../../app/styles/main.scss */
 .footer .contact .center {
   text-align: center;
 }
-/* line 305, ../../app/styles/main.scss */
+/* line 306, ../../app/styles/main.scss */
 .footer .contact .right {
   text-align: right;
 }
+
+/*# sourceMappingURL=main.css.map */
