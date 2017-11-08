@@ -11,10 +11,26 @@
   .margin-top {
     margin-top: 50px;
   }
+  /* line 15, ../../app/styles/mixins.scss */
+  .margin-top.mobile {
+    margin-top: 30px;
+  }
+}
+/* line 19, ../../app/styles/mixins.scss */
+.margin-top.extra-margin {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 19, ../../app/styles/mixins.scss */
+  .margin-top.extra-margin {
+    margin-top: 70px;
+  }
 }
 
-/* line 18, ../../app/styles/mixins.scss */
+/* line 27, ../../app/styles/mixins.scss */
 .strong {
   color: #052f57;
   font-weight: bolder;
 }
+
+/*# sourceMappingURL=mixins.css.map */

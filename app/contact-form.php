@@ -15,7 +15,7 @@ if (isset($_POST['name']) && isset($_POST['companyName']) && isset($_POST['email
 
     $mail->From = $_POST['emailAddress'];
     $mail->FromName = $_POST['name'];
-    $mail->AddAddress('receive_test@laura-the.ninja'); //recipient 
+    $mail->AddAddress('calin@labourforceconstruction.com'); //recipient 
     $mail->Subject = "Message from the Website";
     $mail->Body = "Name: " . $_POST['name'] ."\r\n\r\nCompany: " . $_POST['companyName'] . "\r\n\r\nMessage: " . stripslashes($_POST['enquiryText']);
 
